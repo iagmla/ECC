@@ -26,7 +26,8 @@ def gen_shared_key(pub_key, priv_key, key_field):
     return (pub_key * priv_key) % key_field
 
 
-key_field = gen_key_field(521)
+#key_field = gen_key_field(521)
+key_field = pow(2, 521) - 1
 base_point = gen_base_point(key_field)
 
 priv_keyA = gen_priv_key(base_point)
