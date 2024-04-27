@@ -30,7 +30,7 @@ def decrypt(ctxt1, ctxt2, priv_key, curve_point):
 
 msg = 123
 # P-521 Wierstrass curve W
-curve_point = pow(2, 221) - 1
+curve_point = pow(2, 521) - 1
 
 base_point = gen_base_point(curve_point)
 priv_keyA = gen_priv_key(base_point)
